@@ -5,8 +5,6 @@
     padding: 30px 50px;
     padding-top: 93px;
     padding-bottom: 96px;
-  
-
 }
 
 .header__menu-link {
@@ -23,6 +21,10 @@
     font-size: 18px;
 }
 
+.header__links-list-item_no-bullit{
+    list-style-type: none;
+}
+
 .header__menu-list {
     display: flex;
     gap: 31px;
@@ -33,7 +35,6 @@
 .header__link_active {
   list-style: none;
   text-decoration: none;
-  padding-left: 0;
 }
 
 .header__link_active .header__menu-link {
@@ -188,6 +189,7 @@ min-height: 100%;
 .lots__card-list {
   display: flex;
   gap: 25px;
+  flex-wrap: wrap;
 }
 
 .lots__card-list-item {
@@ -246,6 +248,8 @@ min-height: 100%;
   font-weight: 400;
   line-height: 1.2;
   color: #ffffff;
+  position: relative;
+  z-index: 2;
   padding-bottom: 48px;
   padding-left: 40px;
   padding-right: 40px;
@@ -322,6 +326,7 @@ min-height: 100%;
   grid-template-columns: repeat(3, 1fr);
   align-items: start;
   margin-top: 180px;
+  padding-bottom: 82px;
 }
 
 .footer__address {
